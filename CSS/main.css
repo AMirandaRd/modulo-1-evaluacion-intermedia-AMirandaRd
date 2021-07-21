@@ -1,15 +1,40 @@
+:root { --font-family:'Rubik', sans-serif;
+}
+body{background-color:#3CDBC0;
+text-align: center;}
 
 .header { position:fixed;
 top: 0px;
 width: 100vw;
+height: 10vh;
 display: flex;
-flex-direction: row;
-justify-content: space-between;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+background-color: white;
 }
+.logo {width: 150px;}
 
-.main { position: relative;
-top: 70px;
+.nav {display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;}
+
+.menu {color: #4a4a4a;
+    font-family: var(--font-family);
+margin: 15px;}
+
+
+.main { width: 100vw;
+    height: 100vw;
+position: relative;
+/*top: 50vh;*/
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;}
+align-items: center; 
+font-family: var(--font-family);
+color: #FFFFFF;
+ }
+
+ 
