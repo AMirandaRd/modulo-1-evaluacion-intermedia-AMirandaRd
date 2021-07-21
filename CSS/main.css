@@ -1,2 +1,15 @@
 
-.header {}
+.header { position:fixed;
+top: 0px;
+width: 100vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.main { position: relative;
+top: 70px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
