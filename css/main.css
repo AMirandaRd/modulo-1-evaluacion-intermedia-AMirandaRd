@@ -1,78 +1,78 @@
-:root { --font-family:'Rubik', sans-serif;
-}
-body{background-color:#3CDBC0;
-text-align: center;}
+:root{
+  font-family: 'Rubik', sans-serif;}
 
-.header { position:fixed;
-top: 0px;
-width: 100vw;
-height: 10vh;
-display: flex;
-flex-direction:column;
-justify-content: center;
-background-color: white;
-}
+body {
+  background-color: #3cdbc0;
+  text-align: center;}
 
-.logo {width: 150px;
-    box-sizing:border-box;
-    margin: auto
+.header {
+  position: fixed;
+  top: 0px;
+  width:100%;
+  left:0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
 }
 
+.logo {
+  width: 150px;
+  box-sizing: border-box;
+  margin: auto;
+}
+.menu { 
+  list-style-type: none;
+  display:flex;
+  justify-content: center;
+  justify-content: center;
+  
+}
 
-.menu {list-style-type: none;
-    display: flex;
-    justify-content: center;
+.menu-item {
+  color: #4a4a4a;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 10px 13px 10px;
+}
+
+.text {
+  text-transform: capitalize;
+  width: 8em;
+}
+
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;}
+    }
 
-.menu-item { 
-    color: #4a4a4a;
-    font-size: 16px; 
-    text-transform: uppercase;
-    padding: 0px 10px 13px 10px;}
+  .menu-item {padding-left: 30px;
+    padding-right: 30px;}
+  
 
+  .text {
+    font-size: 40px;
+  }
 
-.main { width: 100vw;
-    height: 100vh;
-position: relative;
-/*top: 50vh;*/
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; 
-font-family: var(--font-family);
-color: #FFFFFF;
-font-size: 30px;
- }
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+}
 
- @media screen and (min-width: 768px) {
-    .header { position:fixed;
-        top: 0px;
-        width: 100vw;
-        height: 10vh;
-        display: flex;
-        flex-direction:row;
-        /*flex-wrap: wrap;*/
-        justify-content:space-between;
-        background-color: white;
-        }
-        .main { width: 100vw;
-            height: 100vh;
-        position: relative;
-        /*top: 50vh;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-        font-family: var(--font-family);
-        color: #FFFFFF;
-        font-size: 40px;}
-
-         .logo {width: 150px;
-            box-sizing:border-box;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 30px;
-            }
-     }
